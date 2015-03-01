@@ -31,7 +31,7 @@
         return;
     }
     
-    if ([_nameTextField.text isEqualToString:@""] || [_phoneTextField.text isEqualToString:@""]) {
+    if ([_phoneTextField.text isEqualToString:@""]) {
         [self showAlert:@"Empty fields" withMessage:@"Please complete all fields"];
     }
     else {
