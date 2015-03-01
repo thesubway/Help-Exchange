@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
     self.window.rootViewController = nav;
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"UYIa2m2q30AgZwSj9vYJSX7B7QNx0HpbNoq2QyI3"
+                  clientKey:@"vMtx3rBzWijKmMn8zkirNiGXCXolHXsmPN5N1tUS"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 
