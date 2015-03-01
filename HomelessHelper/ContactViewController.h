@@ -10,5 +10,7 @@
 #import "ViewController.h"
 
 @interface ContactViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *submitButton;
+- (IBAction)submitPressed:(id)sender;
 
 @end

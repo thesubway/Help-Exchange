@@ -130,6 +130,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yB-jp-X3z">
+                                <rect key="frame" x="270" y="330" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.2501236328938955" green="0.90337387060672503" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Oec-gm-35L"/>
+                                    <constraint firstAttribute="width" constant="60" id="dFl-WX-dFj"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitPressed:" destination="Ly9-LE-s8s" eventType="touchUpInside" id="jKw-kd-HVv"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I can offer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M6-5E-yDB">
                                 <rect key="frame" x="60" y="280" width="120" height="30"/>
                                 <constraints>
@@ -143,6 +158,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9yB-jp-X3z" secondAttribute="centerX" id="5ku-qo-g0Z"/>
                             <constraint firstItem="MBT-JD-fun" firstAttribute="leading" secondItem="CHR-P2-GZL" secondAttribute="trailing" constant="20" id="79B-d7-pMz"/>
                             <constraint firstAttribute="centerX" secondItem="138-R2-d7c" secondAttribute="centerX" id="93s-0w-kQv"/>
                             <constraint firstItem="138-R2-d7c" firstAttribute="top" secondItem="dlA-Sw-YFD" secondAttribute="bottom" constant="40" id="D80-iw-9Z0"/>
@@ -150,6 +166,7 @@
                             <constraint firstItem="M3M-gd-k2E" firstAttribute="leading" secondItem="3M6-5E-yDB" secondAttribute="trailing" constant="20" id="FtT-7O-fbj"/>
                             <constraint firstItem="dlA-Sw-YFD" firstAttribute="leading" secondItem="gfz-Tt-5Vh" secondAttribute="trailing" constant="20" id="KVJ-8M-iyN"/>
                             <constraint firstAttribute="centerX" secondItem="MBT-JD-fun" secondAttribute="centerX" id="RB0-Fj-hIh"/>
+                            <constraint firstItem="9yB-jp-X3z" firstAttribute="top" secondItem="M3M-gd-k2E" secondAttribute="bottom" constant="20" id="aXO-OI-bi0"/>
                             <constraint firstItem="MBT-JD-fun" firstAttribute="leading" secondItem="CHR-P2-GZL" secondAttribute="trailing" constant="40" id="bbc-xh-wcQ"/>
                             <constraint firstItem="Fk2-to-lpN" firstAttribute="top" secondItem="gfz-Tt-5Vh" secondAttribute="bottom" constant="40" id="eb2-Xp-Sl8"/>
                             <constraint firstItem="138-R2-d7c" firstAttribute="leading" secondItem="Fk2-to-lpN" secondAttribute="trailing" constant="20" id="gYI-FH-uQg"/>
@@ -167,6 +184,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="submitButton" destination="9yB-jp-X3z" id="K5h-A2-fOF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ua-Vh-O0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

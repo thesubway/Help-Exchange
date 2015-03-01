@@ -10,4 +10,18 @@
 
 @implementation ContactViewController
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+}
+-(void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (IBAction)submitPressed:(id)sender {
+    
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
 @end
