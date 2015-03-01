@@ -32,7 +32,7 @@
     }
     
     if ([_phoneTextField.text isEqualToString:@""]) {
-        [self showAlert:@"Empty fields" withMessage:@"Please complete all fields"];
+        [self showAlert:@"Empty fields" withMessage:@"Please fill out at least one field."];
     }
     else {
         [DejalBezelActivityView activityViewForView:self.view];

@@ -10,6 +10,7 @@
 #import "PlayVideoViewController.h"
 #import <Parse/Parse.h>
 #import "Video.h"
+#import "DejalActivityView.h"
 
 @interface ListViewController ()
 
@@ -34,12 +35,14 @@
     }
     else {
     }
+    [DejalBezelActivityView activityViewForView:self.view];
     [query getObjectInBackgroundWithId:@"ogrCNqYDJl" block:^(PFObject *object, NSError *error) {
         if (error != nil) {
             UIAlertView *alertView = [[UIAlertView alloc] init];
             alertView.title = @"Retrieve failed";
             alertView.message = @"Failed to retrieve data.";
             [alertView show];
+            [DejalBezelActivityView removeViewAnimated:YES];
         }
         else {
 //            [object setObject:listOfIDs forKey:@"id_list"];
@@ -57,6 +60,7 @@
             self.tableView.dataSource = self;
             self.tableView.delegate = self;
             [self.tableView reloadData];
+            [DejalBezelActivityView removeViewAnimated:YES];
         }
     }];
     //    Video *myVid = [[Video alloc] init];
