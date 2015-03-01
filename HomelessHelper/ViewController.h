@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView *welcomeLabel;
 
 @end
 

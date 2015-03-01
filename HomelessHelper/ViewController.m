@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.welcomeLabel.layer.cornerRadius = 25.0;
 }
 
 - (void)didReceiveMemoryWarning {

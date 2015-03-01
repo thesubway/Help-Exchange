@@ -17,21 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIO-er-h2l">
-                                <rect key="frame" x="272" y="141" width="56" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Uvo-Ts-pnc"/>
-                                    <constraint firstAttribute="width" constant="56" id="h4s-aK-WsA"/>
-                                </constraints>
-                                <state key="normal" title="Enter">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XN-UG-Xe0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPi-wd-7Yn">
                                 <rect key="frame" x="185" y="50" width="230" height="21"/>
+                                <color key="backgroundColor" red="0.074334414350000003" green="1" blue="0.066366753129999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="5fs-HW-vsh"/>
                                     <constraint firstAttribute="height" constant="21" id="htD-8m-pxC"/>
@@ -40,15 +28,42 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textbook.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hqj-C2-nT6">
+                                <rect key="frame" x="210" y="91" width="180" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="F1d-Lo-1Qs"/>
+                                    <constraint firstAttribute="width" constant="180" id="QT1-FP-tcD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIO-er-h2l">
+                                <rect key="frame" x="272" y="303" width="56" height="30"/>
+                                <color key="backgroundColor" red="0.2277621709" green="0.75994766069999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uvo-Ts-pnc"/>
+                                    <constraint firstAttribute="width" constant="56" id="h4s-aK-WsA"/>
+                                </constraints>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XN-UG-Xe0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TIO-er-h2l" firstAttribute="top" secondItem="Hqj-C2-nT6" secondAttribute="bottom" constant="20" id="6Gs-lU-g3s"/>
+                            <constraint firstItem="Hqj-C2-nT6" firstAttribute="top" secondItem="JPi-wd-7Yn" secondAttribute="bottom" constant="20" id="CZ8-3A-RiE"/>
                             <constraint firstAttribute="centerX" secondItem="TIO-er-h2l" secondAttribute="centerX" id="De8-Xh-1Lv"/>
+                            <constraint firstAttribute="centerX" secondItem="Hqj-C2-nT6" secondAttribute="centerX" id="R2M-wx-mQX"/>
                             <constraint firstItem="JPi-wd-7Yn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ZcP-XL-uc4"/>
                             <constraint firstAttribute="centerX" secondItem="JPi-wd-7Yn" secondAttribute="centerX" id="uYu-hd-gQQ"/>
-                            <constraint firstItem="TIO-er-h2l" firstAttribute="top" secondItem="JPi-wd-7Yn" secondAttribute="bottom" constant="70" id="xN1-Y7-50F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="8bC-Xf-vdC" id="3Ti-ue-WHf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,4 +273,7 @@
             <point key="canvasLocation" x="2412" y="317"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="textbook.png" width="585" height="723"/>
+    </resources>
 </document>
