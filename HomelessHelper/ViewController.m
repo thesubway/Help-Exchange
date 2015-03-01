@@ -23,5 +23,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(IBAction)enterPressed:(id)sender {
+    ContactViewController *contactView = [self.storyboard instantiateViewControllerWithIdentifier:@"contactView"];
+    [self.navigationController pushViewController:contactView animated:YES];
+}
 
 @end

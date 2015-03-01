@@ -14,6 +14,7 @@
 		2741DC481AA26C6A00251C9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741DC471AA26C6A00251C9A /* Images.xcassets */; };
 		2741DC4B1AA26C6A00251C9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2741DC491AA26C6A00251C9A /* LaunchScreen.xib */; };
 		2741DC571AA26C6A00251C9A /* HomelessHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741DC561AA26C6A00251C9A /* HomelessHelperTests.m */; };
+		27A2B6011AA290E000FCB863 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6001AA290E000FCB863 /* ContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		2741DC501AA26C6A00251C9A /* HomelessHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomelessHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2741DC551AA26C6A00251C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2741DC561AA26C6A00251C9A /* HomelessHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomelessHelperTests.m; sourceTree = "<group>"; };
+		27A2B5FF1AA290E000FCB863 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		27A2B6001AA290E000FCB863 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		2741DC391AA26C6A00251C9A /* HomelessHelper */ = {
 			isa = PBXGroup;
 			children = (
+				27A2B5FF1AA290E000FCB863 /* ContactViewController.h */,
+				27A2B6001AA290E000FCB863 /* ContactViewController.m */,
 				2741DC3E1AA26C6A00251C9A /* AppDelegate.h */,
 				2741DC3F1AA26C6A00251C9A /* AppDelegate.m */,
 				2741DC411AA26C6A00251C9A /* ViewController.h */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2741DC431AA26C6A00251C9A /* ViewController.m in Sources */,
+				27A2B6011AA290E000FCB863 /* ContactViewController.m in Sources */,
 				2741DC401AA26C6A00251C9A /* AppDelegate.m in Sources */,
 				2741DC3D1AA26C6A00251C9A /* main.m in Sources */,
 			);
@@ -414,6 +420,7 @@
 				2741DC5C1AA26C6A00251C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2741DC5D1AA26C6A00251C9A /* Build configuration list for PBXNativeTarget "HomelessHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				2741DC5F1AA26C6A00251C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

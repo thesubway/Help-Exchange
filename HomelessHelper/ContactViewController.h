@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContactViewController.h
 //  HomelessHelper
 //
 //  Created by Dan Hoang on 2/28/15.
@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ContactViewController.h"
+#import "ViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ContactViewController : UIViewController
 
 @end
-
