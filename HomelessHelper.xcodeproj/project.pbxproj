@@ -29,6 +29,11 @@
 		27A2B61B1AA2A6A300FCB863 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A2B61A1AA2A6A300FCB863 /* Parse.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27A2B61D1AA2A6B300FCB863 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A2B61C1AA2A6B300FCB863 /* ParseFacebookUtils.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27A2B61F1AA2A75E00FCB863 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A2B61E1AA2A75E00FCB863 /* Bolts.framework */; };
+		27A2B6231AA2CBFA00FCB863 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6221AA2CBFA00FCB863 /* DejalActivityView.m */; };
+		27A2B6261AA3530800FCB863 /* MMPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6251AA3530800FCB863 /* MMPickerView.m */; };
+		27A2B6291AA3578C00FCB863 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6281AA3578C00FCB863 /* Book.m */; };
+		27A2B62C1AA3582300FCB863 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B62B1AA3582300FCB863 /* ListViewController.m */; };
+		27A2B62F1AA3682100FCB863 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,16 @@
 		27A2B61A1AA2A6A300FCB863 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		27A2B61C1AA2A6B300FCB863 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		27A2B61E1AA2A75E00FCB863 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		27A2B6211AA2CBFA00FCB863 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		27A2B6221AA2CBFA00FCB863 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		27A2B6241AA3530800FCB863 /* MMPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPickerView.h; sourceTree = "<group>"; };
+		27A2B6251AA3530800FCB863 /* MMPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPickerView.m; sourceTree = "<group>"; };
+		27A2B6271AA3578000FCB863 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		27A2B6281AA3578C00FCB863 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		27A2B62A1AA3582300FCB863 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		27A2B62B1AA3582300FCB863 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		27A2B62D1AA3682100FCB863 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,13 +155,20 @@
 		2741DC391AA26C6A00251C9A /* HomelessHelper */ = {
 			isa = PBXGroup;
 			children = (
-				27A2B5FF1AA290E000FCB863 /* ContactViewController.h */,
-				27A2B6001AA290E000FCB863 /* ContactViewController.m */,
 				2741DC3E1AA26C6A00251C9A /* AppDelegate.h */,
 				2741DC3F1AA26C6A00251C9A /* AppDelegate.m */,
 				2741DC411AA26C6A00251C9A /* ViewController.h */,
 				2741DC421AA26C6A00251C9A /* ViewController.m */,
+				27A2B5FF1AA290E000FCB863 /* ContactViewController.h */,
+				27A2B6001AA290E000FCB863 /* ContactViewController.m */,
+				27A2B62A1AA3582300FCB863 /* ListViewController.h */,
+				27A2B62B1AA3582300FCB863 /* ListViewController.m */,
+				27A2B62D1AA3682100FCB863 /* PlayVideoViewController.h */,
+				27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */,
+				27A2B6271AA3578000FCB863 /* Book.h */,
+				27A2B6281AA3578C00FCB863 /* Book.m */,
 				2741DC441AA26C6A00251C9A /* Main.storyboard */,
+				27A2B6201AA2CBAD00FCB863 /* 3rd-Party */,
 				2741DC471AA26C6A00251C9A /* Images.xcassets */,
 				2741DC491AA26C6A00251C9A /* LaunchScreen.xib */,
 				2741DC3A1AA26C6A00251C9A /* Supporting Files */,
@@ -178,6 +200,17 @@
 				2741DC551AA26C6A00251C9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27A2B6201AA2CBAD00FCB863 /* 3rd-Party */ = {
+			isa = PBXGroup;
+			children = (
+				27A2B6241AA3530800FCB863 /* MMPickerView.h */,
+				27A2B6251AA3530800FCB863 /* MMPickerView.m */,
+				27A2B6211AA2CBFA00FCB863 /* DejalActivityView.h */,
+				27A2B6221AA2CBFA00FCB863 /* DejalActivityView.m */,
+			);
+			name = "3rd-Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +315,13 @@
 			files = (
 				2741DC431AA26C6A00251C9A /* ViewController.m in Sources */,
 				27A2B6011AA290E000FCB863 /* ContactViewController.m in Sources */,
+				27A2B62C1AA3582300FCB863 /* ListViewController.m in Sources */,
+				27A2B62F1AA3682100FCB863 /* PlayVideoViewController.m in Sources */,
+				27A2B6261AA3530800FCB863 /* MMPickerView.m in Sources */,
 				2741DC401AA26C6A00251C9A /* AppDelegate.m in Sources */,
 				2741DC3D1AA26C6A00251C9A /* main.m in Sources */,
+				27A2B6291AA3578C00FCB863 /* Book.m in Sources */,
+				27A2B6231AA2CBFA00FCB863 /* DejalActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

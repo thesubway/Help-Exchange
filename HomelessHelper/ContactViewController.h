@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
+#import <MessageUI/MessageUI.h>
 
-@interface ContactViewController : UIViewController
+@interface ContactViewController : UIViewController <MFMailComposeViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *submitButton;
 - (IBAction)submitPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
