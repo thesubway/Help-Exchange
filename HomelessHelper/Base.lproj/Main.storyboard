@@ -185,6 +185,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="lookingForTextField" destination="138-R2-d7c" id="gIO-YW-CEV"/>
+                        <outlet property="nameTextField" destination="MBT-JD-fun" id="VdM-64-Cs1"/>
+                        <outlet property="offerTextField" destination="M3M-gd-k2E" id="RFB-y8-8ou"/>
+                        <outlet property="phoneTextField" destination="dlA-Sw-YFD" id="bOi-MC-x2G"/>
                         <outlet property="submitButton" destination="9yB-jp-X3z" id="K5h-A2-fOF"/>
                     </connections>
                 </viewController>

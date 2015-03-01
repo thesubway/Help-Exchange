@@ -12,5 +12,9 @@
 @interface ContactViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *submitButton;
 - (IBAction)submitPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *phoneTextField;
+@property (strong, nonatomic) IBOutlet UITextField *lookingForTextField;
+@property (strong, nonatomic) IBOutlet UITextField *offerTextField;
 
 @end
