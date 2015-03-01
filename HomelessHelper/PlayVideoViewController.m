@@ -8,6 +8,7 @@
 
 #import "PlayVideoViewController.h"
 #import "DejalActivityView.h"
+#import <Parse/Parse.h>
 
 @interface PlayVideoViewController ()
 @property (strong, nonatomic) UIWebView *movieView;
@@ -17,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [DejalBezelActivityView activityViewForView:self.view];
 }
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -29,14 +29,22 @@
     self.movieView.frame = CGRectMake(self.view.bounds.size.width / 2 - (movieWidth / 2), self.view.bounds.size.height / 2 - (movieHeight / 2), movieWidth, movieHeight);
     self.movieView.delegate = self;
     NSURLRequest *request;
-    if (_indexPath.row == 0) {
-        request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/embed/8Q7QUEBYXHU" ]];
-    }
-    else if (_indexPath.row == 1) {
-        request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/embed/AQXWsDNno8o" ]];
-    }
-    [self.movieView loadRequest:request];
+    
+    //retrieve video:
+    
+    
+//    if (_indexPath.row == 0) {
+//        request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/embed/8Q7QUEBYXHU" ]];
+//    }
+//    else if (_indexPath.row == 1) {
+//        request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/embed/AQXWsDNno8o" ]];
+//    }
+    NSString *vidID = [_listOfIDs objectAtIndex:_indexPath.row];
+    NSString *youtubeURL = [NSString stringWithFormat:@"%@%@", @"http://www.youtube.com/embed/",vidID];
+    request = [NSURLRequest requestWithURL:[NSURL URLWithString:youtubeURL]];
     [self.view addSubview:self.movieView];
+    [DejalBezelActivityView activityViewForView:self.view];
+    [self.movieView loadRequest:request];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     [DejalBezelActivityView removeViewAnimated:NO];

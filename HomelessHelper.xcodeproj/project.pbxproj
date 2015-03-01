@@ -34,6 +34,7 @@
 		27A2B6291AA3578C00FCB863 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6281AA3578C00FCB863 /* Book.m */; };
 		27A2B62C1AA3582300FCB863 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B62B1AA3582300FCB863 /* ListViewController.m */; };
 		27A2B62F1AA3682100FCB863 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */; };
+		27A2B6321AA379E400FCB863 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A2B6311AA379E400FCB863 /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		27A2B62B1AA3582300FCB863 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		27A2B62D1AA3682100FCB863 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
 		27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		27A2B6301AA379DA00FCB863 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		27A2B6311AA379E400FCB863 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				27A2B62E1AA3682100FCB863 /* PlayVideoViewController.m */,
 				27A2B6271AA3578000FCB863 /* Book.h */,
 				27A2B6281AA3578C00FCB863 /* Book.m */,
+				27A2B6301AA379DA00FCB863 /* Video.h */,
+				27A2B6311AA379E400FCB863 /* Video.m */,
 				2741DC441AA26C6A00251C9A /* Main.storyboard */,
 				27A2B6201AA2CBAD00FCB863 /* 3rd-Party */,
 				2741DC471AA26C6A00251C9A /* Images.xcassets */,
@@ -316,6 +321,7 @@
 				2741DC431AA26C6A00251C9A /* ViewController.m in Sources */,
 				27A2B6011AA290E000FCB863 /* ContactViewController.m in Sources */,
 				27A2B62C1AA3582300FCB863 /* ListViewController.m in Sources */,
+				27A2B6321AA379E400FCB863 /* Video.m in Sources */,
 				27A2B62F1AA3682100FCB863 /* PlayVideoViewController.m in Sources */,
 				27A2B6261AA3530800FCB863 /* MMPickerView.m in Sources */,
 				2741DC401AA26C6A00251C9A /* AppDelegate.m in Sources */,

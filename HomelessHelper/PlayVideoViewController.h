@@ -11,5 +11,7 @@
 @interface PlayVideoViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic) NSIndexPath *indexPath;
+@property (strong, nonatomic) NSMutableArray *listOfVideos;
+@property (strong, nonatomic) NSMutableArray *listOfIDs;
 
 @end

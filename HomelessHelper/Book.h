@@ -8,4 +8,6 @@
 
 @interface Book : NSObject 
 
+@property (strong, nonatomic) NSString *title;
+
 @end

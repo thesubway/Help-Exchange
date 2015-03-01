@@ -36,7 +36,7 @@
     }
     else {
         [DejalBezelActivityView activityViewForView:self.view];
-        [self performSelector:@selector(moveToList) withObject:self afterDelay:1.5];
+        [self performSelector:@selector(moveToList) withObject:self afterDelay:0.5];
     }
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -92,7 +92,7 @@
         case MFMailComposeResultFailed:
             alertView.title = @"Send failed";
             alertView.message = @"Sorry, your message failed to send.";
-            
+            [alertView show];
             return;
             
         default:

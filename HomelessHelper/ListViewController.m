@@ -8,22 +8,61 @@
 
 #import "ListViewController.h"
 #import "PlayVideoViewController.h"
+#import <Parse/Parse.h>
+#import "Video.h"
 
 @interface ListViewController ()
 
 @property (strong, nonatomic) NSMutableArray *listOfBooks;
 @property (strong, nonatomic) NSMutableArray *listOfVideos;
+@property (strong, nonatomic) NSMutableArray *listOfIDs;
 @end
 
 @implementation ListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
     self.listOfBooks = [[NSMutableArray alloc] initWithObjects:@"The Swift Programming Language",@"How to Win Friends and Influence People", nil];
-    self.listOfVideos = [[NSMutableArray alloc] initWithObjects:@"Piano playing",@"Swift navigation tutorial", nil];
-    // Do any additional setup after loading the view.
+//    self.listOfVideos = [[NSMutableArray alloc] initWithObjects:@"Piano playing",@"Swift navigation tutorial", nil];
+//    PFObject *videoList = [[PFObject alloc] initWithClassName:@"videoList"];
+    PFQuery *query = [[PFQuery alloc] initWithClassName:@"videoList"];
+//    NSMutableArray *listOfIDs = [[NSMutableArray alloc] initWithObjects:@"8Q7QUEBYXHU",@"AQXWsDNno8o", nil];
+    if ([self.searchType isEqualToString:@"Books"]) {
+        self.tableView.dataSource = self;
+        self.tableView.delegate = self;
+        return;
+    }
+    else {
+    }
+    [query getObjectInBackgroundWithId:@"ogrCNqYDJl" block:^(PFObject *object, NSError *error) {
+        if (error != nil) {
+            UIAlertView *alertView = [[UIAlertView alloc] init];
+            alertView.title = @"Retrieve failed";
+            alertView.message = @"Failed to retrieve data.";
+            [alertView show];
+        }
+        else {
+//            [object setObject:listOfIDs forKey:@"id_list"];
+//            [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//                if (error != nil) {
+//                    UIAlertView *alertView = [[UIAlertView alloc] init];
+//                    alertView.title = @"Save failed";
+//                    alertView.message = @"Failed to retrieve data.";
+//                    [alertView show];
+//                }
+//            }];
+            
+            self.listOfVideos = object[@"video_list"];
+            self.listOfIDs = object[@"id_list"];
+            self.tableView.dataSource = self;
+            self.tableView.delegate = self;
+            [self.tableView reloadData];
+        }
+    }];
+    //    Video *myVid = [[Video alloc] init];
+    //    myVid.name = @"Piano playing";
+    //    myVid.videoId = @"8Q7QUEBYXHU";
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +83,8 @@
     }
     else {
         PlayVideoViewController *playVideoView = [self.storyboard instantiateViewControllerWithIdentifier:@"playVideoView"];
+        playVideoView.listOfVideos = _listOfVideos;
+        playVideoView.listOfIDs = _listOfIDs;
         playVideoView.indexPath = indexPath;
         [self.navigationController pushViewController:playVideoView animated:YES];
     }

@@ -30,10 +30,10 @@
                                     <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XN-UG-Xe0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPi-wd-7Yn">
-                                <rect key="frame" x="279" y="50" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPi-wd-7Yn">
+                                <rect key="frame" x="185" y="50" width="230" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="5fs-HW-vsh"/>
+                                    <constraint firstAttribute="width" constant="230" id="5fs-HW-vsh"/>
                                     <constraint firstAttribute="height" constant="21" id="htD-8m-pxC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

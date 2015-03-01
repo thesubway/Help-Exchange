@@ -28,7 +28,7 @@
 }
 -(IBAction)enterPressed:(id)sender {
     [DejalBezelActivityView activityViewForView:self.view];
-    [self performSelector:@selector(moveToContact) withObject:self afterDelay:1.0];
+    [self performSelector:@selector(moveToContact) withObject:self afterDelay:0.5];
 }
 -(void)moveToContact {
     ContactViewController *contactView = [self.storyboard instantiateViewControllerWithIdentifier:@"contactView"];
